@@ -1,0 +1,139 @@
+{
+    "abi": [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "rollNumber",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "date",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "bool",
+                    "name": "isPresent",
+                    "type": "bool"
+                }
+            ],
+            "name": "AttendanceMarked",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_rollNumber",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_date",
+                    "type": "string"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "_isPresent",
+                    "type": "bool"
+                }
+            ],
+            "name": "markAttendance",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_rollNumber",
+                    "type": "string"
+                }
+            ],
+            "name": "registerRollNumber",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "rollNumber",
+                    "type": "string"
+                }
+            ],
+            "name": "RollNumberRegistered",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_rollNumber",
+                    "type": "string"
+                }
+            ],
+            "name": "getAttendance",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "string",
+                            "name": "rollNumber",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "string",
+                            "name": "date",
+                            "type": "string"
+                        },
+                        {
+                            "internalType": "bool",
+                            "name": "isPresent",
+                            "type": "bool"
+                        }
+                    ],
+                    "internalType": "struct Attendance.AttendanceRecord[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_rollNumber",
+                    "type": "string"
+                }
+            ],
+            "name": "isRollNumberRegistered",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "contractAddress" : "0xABa6BF7e8058f81dDd8c2Cd2FB0f54DC040a5580"
+}
